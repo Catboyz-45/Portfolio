@@ -700,6 +700,18 @@ a.card:hover,
   transform: scale(1.04);
 }
 
+.case-media-diagram {
+  background: #fff;
+}
+
+.case-media-diagram img {
+  inset: 24px;
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  object-fit: contain;
+  object-position: center;
+}
+
 .case-body {
   padding: clamp(24px, 4vw, 44px);
   display: flex;
@@ -780,6 +792,19 @@ a.card:hover,
   justify-content: center;
   align-items: flex-start;
   padding-top: 22px;
+}
+
+.project-media-logo {
+  background: #1c1a17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-media-logo img {
+  width: 112px;
+  height: 112px;
+  border-radius: 24px;
 }
 
 .project-media-phone img {
@@ -1504,5 +1529,17 @@ a.card:hover,
 
   .hero-portrait img {
     transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-media-diagram {
+    min-height: 240px;
+  }
+
+  .case-media-diagram img {
+    inset: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
   }
 }
