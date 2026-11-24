@@ -682,6 +682,22 @@ a.card:hover,
 
 .case-media {
   min-height: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+.case-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+  transition: transform 900ms var(--ease-out);
+}
+
+.case-card:hover .case-media img {
+  transform: scale(1.04);
 }
 
 .case-body {
@@ -756,6 +772,21 @@ a.card:hover,
   height: 100%;
   object-fit: cover;
   transition: transform 900ms var(--ease-out);
+}
+
+.project-media-phone {
+  background: var(--cream-deep);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 22px;
+}
+
+.project-media-phone img {
+  width: 58%;
+  height: auto;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 10px 30px rgba(31, 77, 58, 0.18);
 }
 
 .project-card:hover .project-media img {
