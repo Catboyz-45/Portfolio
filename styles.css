@@ -794,19 +794,6 @@ a.card:hover,
   padding-top: 22px;
 }
 
-.project-media-logo {
-  background: #1c1a17;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-media-logo img {
-  width: 112px;
-  height: 112px;
-  border-radius: 24px;
-}
-
 .project-media-phone img {
   width: 58%;
   height: auto;
